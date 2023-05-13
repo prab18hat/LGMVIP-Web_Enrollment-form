@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1 style="background-color: aqua; height:50px; color: white; font-weight: bolder; font-size: 180%; text-shadow: white;">Student Enrollment Form</h1>
+  <div class="container">
+
+    <div class="registrationcontainer">
+
+      <div class="name">
+        <label>Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" class="filled" id="name" name="Name" placeholder="Enter Name" />
+      </div>
+
+      <div class="email">
+        <label>Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" class="filled" id="email" name="Email" placeholder="Enter your Email Id" />
+      </div>
+      <div class="websitelink">
+        <label>Website</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" class="filled" id="websitelink" name="WebsiteLink" placeholder="Enter your Website Link" />
+      </div>
+        <div class="img">
+          <label>Image Link</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" class="filled" id="img" name="img" placeholder="Enter URL">
+        </div>
+        <p>
+          Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" name="gender" value="male" />
+            Male
+          </label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" name="gender" value="female" />
+            Female
+          </label>
+        </p>
+        <p>
+          <div class="skills" id="skills">
+           Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="skl" value="java"> JAVA
+          <input type="checkbox" name="skl" value="html"> HTML
+          <input type="checkbox" name="skl" value="css"> CSS
+          </div>
+
+        </p>
+        <button class="submit" type="button">
+          Submit
+        </button>  
+        <button class="btn2" type="button">
+         Clear
+        </button>
+
+
+   
+    <div class="output">
+      <!--Data stored dynamically inside the container-->
+
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
